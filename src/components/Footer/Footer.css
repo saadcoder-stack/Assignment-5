@@ -1,0 +1,356 @@
+/* ========================================
+   FOOTER
+======================================== */
+
+.footer {
+  width: 100%;
+
+  background: #ffffff;
+
+  border-top: 1px solid #edf0f4;
+
+  color: #667085;
+}
+
+
+/* ========================================
+   FOOTER CONTAINER
+======================================== */
+
+.footer-container {
+  width: min(100% - 48px, 1120px);
+
+  margin: 0 auto;
+
+  padding: 58px 0 55px;
+
+  display: grid;
+
+  grid-template-columns: 2.2fr 1fr 1fr 1fr;
+
+  gap: 50px;
+}
+
+
+/* ========================================
+   BRAND
+======================================== */
+
+.footer-brand {
+  max-width: 420px;
+}
+
+
+/* Logo */
+
+.footer-logo {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  color: #172033;
+
+  font-size: 19px;
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+.footer-logo strong {
+  color: #e51c84;
+}
+
+
+/* Logo Box */
+
+.footer-logo-box {
+  width: 27px;
+  height: 27px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 6px;
+
+  background: linear-gradient(
+    135deg,
+    #9b35d4,
+    #e51c84
+  );
+
+  color: #ffffff;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+
+/* Description */
+
+.footer-description {
+  max-width: 410px;
+
+  margin: 15px 0 25px;
+
+  color: #8793a7;
+
+  font-size: 13px;
+
+  line-height: 1.65;
+}
+
+
+/* ========================================
+   SOCIAL LINKS
+======================================== */
+
+.social-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 19px;
+}
+
+.social-links a {
+  color: #637086;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.social-links a:hover {
+  color: #e51c84;
+
+  transform: translateY(-1px);
+}
+
+
+/* ========================================
+   FOOTER COLUMNS
+======================================== */
+
+.footer-column h3 {
+  margin: 2px 0 18px;
+
+  color: #172033;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.3px;
+}
+
+
+.footer-column ul {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+
+  padding: 0;
+
+  margin: 0;
+
+  list-style: none;
+}
+
+
+.footer-column a {
+  color: #7c899e;
+
+  font-size: 12px;
+
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    padding-left 0.2s ease;
+}
+
+
+.footer-column a:hover {
+  color: #e51c84;
+
+  padding-left: 2px;
+}
+
+
+/* ========================================
+   BOTTOM BAR
+======================================== */
+
+.footer-bottom {
+  width: min(100% - 48px, 1120px);
+
+  margin: 0 auto;
+
+  padding: 25px 0;
+
+  border-top: 1px solid #edf0f4;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.footer-bottom p {
+  margin: 0;
+
+  color: #a4afbf;
+
+  font-size: 11px;
+}
+
+
+.bottom-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 28px;
+}
+
+
+.bottom-links a {
+  color: #a4afbf;
+
+  font-size: 11px;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+
+.bottom-links a:hover {
+  color: #e51c84;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+  .footer-container {
+    grid-template-columns: 2fr 1fr 1fr;
+
+    gap: 35px;
+  }
+
+  .footer-brand {
+    grid-column: span 3;
+  }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+  .footer-container {
+    width: calc(100% - 28px);
+
+    padding: 40px 0;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 32px 20px;
+  }
+
+
+  .footer-brand {
+    grid-column: span 2;
+
+    max-width: 100%;
+  }
+
+
+  .footer-logo {
+    font-size: 17px;
+  }
+
+
+  .footer-description {
+    max-width: 330px;
+
+    margin: 12px 0 20px;
+
+    font-size: 11px;
+  }
+
+
+  .social-links {
+    gap: 15px;
+  }
+
+
+  .social-links a {
+    font-size: 10px;
+  }
+
+
+  .footer-column h3 {
+    margin-bottom: 13px;
+
+    font-size: 9px;
+  }
+
+
+  .footer-column ul {
+    gap: 9px;
+  }
+
+
+  .footer-column a {
+    font-size: 10px;
+  }
+
+
+  .footer-bottom {
+    width: calc(100% - 28px);
+
+    padding: 18px 0;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 14px;
+  }
+
+
+  .footer-bottom p {
+    font-size: 9px;
+  }
+
+
+  .bottom-links {
+    gap: 18px;
+  }
+
+
+  .bottom-links a {
+    font-size: 9px;
+  }
+
+}
