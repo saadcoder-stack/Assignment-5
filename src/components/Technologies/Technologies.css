@@ -1,0 +1,149 @@
+.technologies-section {
+  width: 100%;
+
+  padding: 55px 0 70px;
+
+  background: #ffffff;
+}
+
+
+.technologies-container {
+  width: min(100% - 48px, 1120px);
+
+  margin: 0 auto;
+}
+
+
+/* ========================================
+   HEADING
+======================================== */
+
+.technologies-heading {
+  margin-bottom: 20px;
+}
+
+.technologies-heading h2 {
+  margin: 0;
+
+  color: #172033;
+
+  font-size: 23px;
+  line-height: 1.2;
+
+  font-weight: 800;
+
+  letter-spacing: -0.8px;
+}
+
+.technologies-heading h2 span {
+  background: linear-gradient(
+    90deg,
+    #e91e83,
+    #a126d6
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+.technologies-heading p {
+  margin: 5px 0 0;
+
+  color: #8b95a7;
+
+  font-size: 8px;
+}
+
+
+/* ========================================
+   MAIN CONTENT
+======================================== */
+
+.technologies-content {
+  display: grid;
+
+  grid-template-columns: minmax(0, 3fr) minmax(190px, 1fr);
+
+  gap: 14px;
+
+  align-items: start;
+}
+
+
+/* ========================================
+   TECHNOLOGY GRID
+======================================== */
+
+.technology-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 10px;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+  .technologies-container {
+    width: min(100% - 32px, 760px);
+  }
+
+  .technologies-content {
+    grid-template-columns: 1fr;
+  }
+
+  .technology-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .your-stack {
+    order: -1;
+  }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+  .technologies-section {
+    padding: 35px 0 45px;
+  }
+
+  .technologies-container {
+    width: calc(100% - 24px);
+  }
+
+  .technologies-heading {
+    margin-bottom: 14px;
+  }
+
+  .technologies-heading h2 {
+    font-size: 19px;
+  }
+
+  .technologies-heading p {
+    font-size: 7px;
+  }
+
+  .technology-grid {
+    grid-template-columns: 1fr;
+
+    gap: 9px;
+  }
+
+  .technologies-content {
+    gap: 12px;
+  }
+
+}

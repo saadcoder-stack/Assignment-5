@@ -1,0 +1,177 @@
+.technology-card {
+  min-width: 0;
+  padding: 14px;
+
+  background: #ffffff;
+
+  border: 1px solid #e9edf3;
+  border-radius: 10px;
+
+  box-shadow: 0 3px 12px rgba(15, 23, 42, 0.03);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.technology-card:hover {
+  transform: translateY(-3px);
+
+  border-color: #dfe4ec;
+
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+
+/* Top */
+
+.card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.technology-icon {
+  width: 25px;
+  height: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.technology-icon img {
+  width: 22px;
+  height: 22px;
+
+  object-fit: contain;
+}
+
+.technology-badge {
+  padding: 3px 7px;
+
+  border-radius: 999px;
+
+  background: #eff8ff;
+
+  color: #2196d3;
+
+  font-size: 8px;
+  font-weight: 600;
+}
+
+
+/* Name */
+
+.technology-card h3 {
+  margin: 8px 0 5px;
+
+  color: #101828;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+/* Description */
+
+.technology-description {
+  height: 42px;
+
+  margin: 0;
+
+  overflow: hidden;
+
+  color: #788398;
+
+  font-size: 8.5px;
+  line-height: 1.55;
+}
+
+
+/* Meta */
+
+.technology-meta {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  margin-top: 10px;
+
+  font-size: 7px;
+  color: #7b8799;
+}
+
+.category-chip {
+  padding: 3px 6px;
+
+  background: #f4f6f8;
+
+  border-radius: 4px;
+}
+
+.difficulty {
+  white-space: nowrap;
+}
+
+.rating {
+  margin-left: auto;
+
+  display: flex;
+  align-items: center;
+
+  gap: 3px;
+
+  color: #6c778a;
+}
+
+.star {
+  color: #f5a623;
+
+  font-size: 9px;
+}
+
+
+/* Add button */
+
+.add-stack-button {
+  width: 100%;
+
+  height: 30px;
+
+  margin-top: 9px;
+
+  border: none;
+  border-radius: 5px;
+
+  background: #0d1423;
+
+  color: white;
+
+  font-size: 8px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.add-stack-button:hover:not(:disabled) {
+  background: #1d2939;
+
+  transform: translateY(-1px);
+}
+
+.add-stack-button:disabled {
+  cursor: not-allowed;
+
+  opacity: 0.7;
+}
+
+.add-stack-button.added {
+  background: #111827;
+}
